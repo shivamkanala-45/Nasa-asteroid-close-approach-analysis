@@ -1,0 +1,74 @@
+{
+  "eda": {
+    "event_records": 238760,
+    "unique_designations": 33426,
+    "approach_time_min": "1900-01-01 02:06:00",
+    "approach_time_max": "2199-12-30 16:05:00",
+    "events_by_body": {
+      "Earth": 120839,
+      "Venus": 51573,
+      "Mercury": 30393,
+      "Mars": 28254,
+      "Moon": 7684,
+      "Jupiter": 16,
+      "1 Ceres": 1
+    },
+    "share_with_diameter_pct": 4.985,
+    "share_with_h_pct": 99.903,
+    "median_dist_ld": 23.831504460082343,
+    "median_v_rel_kms": 11.644255042461001,
+    "spearman_dist_vrel_earth": 0.050526807428851274,
+    "spearman_h_diameter": -0.8720002370024145,
+    "n_h_diameter_pairs": 11872,
+    "events_before_retrieval": 125736,
+    "events_after_retrieval": 113024,
+    "iqr_outlier_counts": {
+      "iqr_outlier_dist_ld": 17498,
+      "iqr_outlier_v_rel": 11266,
+      "iqr_outlier_h": 315
+    },
+    "raw_file": "cad_raw_20261122T160720Z.csv.gz",
+    "retrieved_utc": "2026-11-22T16:07:20+00:00"
+  },
+  "ml": {
+    "modelling_body": "Earth",
+    "model_features": [
+      "log10_dist_ld",
+      "v_rel",
+      "h"
+    ],
+    "rows_used": 120662,
+    "rows_dropped_missing_features": 114,
+    "silhouette_by_k": {
+      "2": 0.3299,
+      "3": 0.3553,
+      "4": 0.2929,
+      "5": 0.2793,
+      "6": 0.2821,
+      "7": 0.2583,
+      "8": 0.2597,
+      "9": 0.2547,
+      "10": 0.2567
+    },
+    "k_used": 3,
+    "k_suggested_by_silhouette": 3,
+    "seed_stability_ari": 0.9953,
+    "cluster_sizes": {
+      "0": 35861,
+      "1": 66918,
+      "2": 17883
+    },
+    "isolation_forest": {
+      "contamination": 0.01,
+      "flagged": 1207,
+      "flagged_pct": 1.0
+    },
+    "group_counts": {
+      "N/A (non-Earth body)": 117794,
+      "D: Earth, >=5 LD": 110522,
+      "B: <5 LD & medium/small (H>22)": 9862,
+      "A: <5 LD & larger (H<=22)": 391,
+      "C: <5 LD & H unknown": 1
+    }
+  }
+}

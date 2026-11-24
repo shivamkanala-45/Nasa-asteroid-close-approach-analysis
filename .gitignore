@@ -1,0 +1,50 @@
+# ==============================================================================
+# Git Ignore Configuration: NASA Asteroid & Comet Close-Approach Analysis
+# ==============================================================================
+
+# Python bytecode and caches
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.coverage
+htmlcov/
+
+# Environments
+.venv/
+venv/
+env/
+ENV/
+build/
+dist/
+*.egg-info/
+
+# Jupyter Notebook checkpoints
+.ipynb_checkpoints/
+*/.ipynb_checkpoints/*
+
+# IDE and Editor configuration
+.vscode/
+.idea/
+*.sublime-project
+*.sublime-workspace
+
+# Operating System files
+.DS_Store
+Thumbs.db
+desktop.ini
+
+# Large dataset files (reproducible programmatically via Notebook 01)
+# Note: Sample data in data/sample/ is preserved for immediate preview
+data/raw/*
+!data/raw/.gitkeep
+data/processed/*
+!data/processed/.gitkeep
+*.csv.gz
+
+# Archive and report bundles
+*.zip
+*.tar.gz
+*.rar
+Final_Project_Report/
