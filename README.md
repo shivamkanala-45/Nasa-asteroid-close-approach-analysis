@@ -105,7 +105,7 @@ flowchart TD
 
 1. **Clone the repository:**
    ```bash
-   git clone https://github.com/<your-username>/nasa-asteroid-close-approach-analysis.git
+   git clone https://github.com/shivamkanala-45/Nasa-asteroid-close-approach-analysis.git
    cd nasa-asteroid-close-approach-analysis
    ```
 
